@@ -5,6 +5,24 @@ provider:
   runtime: python3.8
   stage: dev
   region: us-east-1
+  vpc:
+      securityGroupIds:
+        - sg-01d6d6d10e996cde7
+      subnetIds:
+        - subnet-000315d04cabb21a4
+        - subnet-099d371e047a1085d
+        - subnet-0cfca41baccf57006
+   layers:
+      - arn:aws:lambda:us-east-1:751743882368:layer:tenjin-utils:3
+   description: test-lambda
+    timeout: 10 # seconds
+    memorySize: 128 # mb
+    package:
+      patterns:
+        - "!node_modules/**"
+        - "!yarn.lock"
+        - "!package-lock.json"
+        - "!package.json"
 
 plugins:
   - serverless-python-requirements
@@ -14,24 +32,12 @@ package:
 
 
 functions:
-  theLambda:
+  functionOne:
     name: test_github_actions2
-    handler: lambda_handler.handler
-    description: test-lambda
-    timeout: 10 # seconds
-    memorySize: 128 # mb
-    package:
-      patterns:
-        - "!node_modules/**"
-        - "!yarn.lock"
-        - "!package-lock.json"
-        - "!package.json"
-    vpc:
-      securityGroupIds:
-        - sg-01d6d6d10e996cde7
-      subnetIds:
-        - subnet-000315d04cabb21a4
-        - subnet-099d371e047a1085d
-        - subnet-0cfca41baccf57006
-    layers:
-      - arn:aws:lambda:us-east-1:751743882368:layer:tenjin-utils:3
+    handler: handler.lambda_function
+  functionTwo:
+    name: test_github_actions
+    handler: handler.lambda_function1
+    
+    
+    
