@@ -30,6 +30,8 @@ functions:
         - "!yarn.lock"
         - "!package-lock.json"
         - "!package.json"
+        - "!handler/**"
+        - "handler/lambda_function_one.py"
   
   test_new2:
     name: test_lambda_func_2
@@ -40,5 +42,7 @@ functions:
         - "!yarn.lock"
         - "!package-lock.json"
         - "!package.json"
+        - "!handler/**"
+        - "handler/lambda_function_two.py"
    
     
