@@ -26,8 +26,9 @@ package:
 
 
 functions:
-  test_github_lambda_func_1:
-    handler: main/handler/lambda_function_one.lambda_handler
+  theLambda:
+    name: test_github_lambda_func_1
+    handler: handler/lambda_function_one.lambda_handler
     package:
       patterns:
         - "!node_modules/**"
