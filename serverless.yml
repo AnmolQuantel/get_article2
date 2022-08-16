@@ -35,6 +35,15 @@ functions:
         - "!yarn.lock"
         - "!package-lock.json"
         - "!package.json"
+  lambda2:
+    name: test_github_lambda_func_2
+    handler: main/handler/lambda_function_two.lambda_handler
+    package:
+      patterns:
+        - "!node_modules/**"
+        - "!yarn.lock"
+        - "!package-lock.json"
+        - "!package.json"
     
-    
+   
     
