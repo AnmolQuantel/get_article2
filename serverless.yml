@@ -35,7 +35,6 @@ functions:
         - "!yarn.lock"
         - "!package-lock.json"
         - "!package.json"
-        - "!handler"
   test_github_lambda_func_2:
     handler: handler/lambda_function_two.lambda_handler
     package:
