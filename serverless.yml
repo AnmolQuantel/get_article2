@@ -1,4 +1,4 @@
-service: basic-serverless-lambda-python
+service: serverless_dev
 frameworkVersion: 2
 
 provider:
@@ -27,8 +27,7 @@ package:
 
 
 functions:
-  theLambda:
-    name: test_github_lambda_func_1
+  test_github_lambda_func_1:
     handler: get_article2/handler/lambda_function_one.lambda_handler
     package:
       patterns:
@@ -36,8 +35,7 @@ functions:
         - "!yarn.lock"
         - "!package-lock.json"
         - "!package.json"
-  lambda2:
-    name: test_github_lambda_func_2
+  test_github_lambda_func_2:
     handler: get_article2/handler/lambda_function_two.lambda_handler
     package:
       patterns:
