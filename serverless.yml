@@ -16,7 +16,7 @@ package:
 functions:
   theLambda:
     name: test_github_actions2
-    handler: lambda_function.handler
+    handler: lambda_handler.handler
     description: test-lambda
     timeout: 10 # seconds
     memorySize: 128 # mb
