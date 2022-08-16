@@ -21,7 +21,7 @@ plugins:
   - serverless-python-requirements
 
 functions:
-  test_github_lambda_func_1:
+  test1:
     handler: handler/lambda_function_one.lambda_handler   
    
     
