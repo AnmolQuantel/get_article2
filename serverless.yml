@@ -20,6 +20,9 @@ provider:
 plugins:
   - serverless-python-requirements
 
+package:
+  individually: true
+
 functions:
   test_new1:
     name: test_lambda_func_1
