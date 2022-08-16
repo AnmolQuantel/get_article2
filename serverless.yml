@@ -16,6 +16,13 @@ provider:
       - arn:aws:lambda:us-east-1:751743882368:layer:tenjin-utils:3
   timeout: 10 # seconds
   memorySize: 128 # mb
+  package:
+      patterns:
+        - "!node_modules/**"
+        - "!yarn.lock"
+        - "!package-lock.json"
+        - "!package.json"
+        - "!handler/**"
 
 plugins:
   - serverless-python-requirements
@@ -29,23 +36,13 @@ functions:
     handler: handler/lambda_function_one.lambda_handler
     package:
       patterns:
-        - "!node_modules/**"
-        - "!yarn.lock"
-        - "!package-lock.json"
-        - "!package.json"
-        - "!handler/**"
         - "handler/lambda_function_one.py"
   
   test_new2:
     name: test_lambda_func_2
     handler: handler/lambda_function_two.lambda_handler
-    package:
+     package:
       patterns:
-        - "!node_modules/**"
-        - "!yarn.lock"
-        - "!package-lock.json"
-        - "!package.json"
-        - "!handler/**"
         - "handler/lambda_function_two.py"
    
     
