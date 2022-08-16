@@ -32,7 +32,7 @@ package:
 
 
 functions:
-  functionOne:
+  theLambda:
     name: test_github_actions2
     handler: handler.lambda_function
   functionTwo:
