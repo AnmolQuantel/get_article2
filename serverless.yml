@@ -33,11 +33,8 @@ package:
 
 functions:
   theLambda:
-    name: test_github_actions2
-    handler: handler/lambda_function_one.lambda_handler
-  functionTwo:
     name: test_github_actions
-    handler: handler/lambda_function_two.lambda_handler
+    handler: handler/lambda_function_one.lambda_handler
     
     
     
