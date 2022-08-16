@@ -24,9 +24,6 @@ plugins:
 
 functions:
   test_github_lambda_func_1:
-    handler: handler/lambda_function_one.lambda_handler
-    
-  test_github_lambda_func_2:
-    handler: handler/lambda_function_two.lambda_handler   
+    handler: handler/lambda_function_one.lambda_handler   
    
     
