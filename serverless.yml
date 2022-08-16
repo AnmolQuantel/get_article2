@@ -28,7 +28,7 @@ package:
 functions:
   theLambda:
     name: test_github_actions
-    handler: tree/main/handler/lambda_function_one.lambda_handler
+    handler: handler/lambda_function_one.lambda_handler
     package:
     patterns:
       - "!node_modules/**"
