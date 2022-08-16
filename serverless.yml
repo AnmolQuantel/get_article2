@@ -12,17 +12,17 @@ provider:
         - subnet-000315d04cabb21a4
         - subnet-099d371e047a1085d
         - subnet-0cfca41baccf57006
-   layers:
+  layers:
       - arn:aws:lambda:us-east-1:751743882368:layer:tenjin-utils:3
-   description: test-lambda
-    timeout: 10 # seconds
-    memorySize: 128 # mb
-    package:
-      patterns:
-        - "!node_modules/**"
-        - "!yarn.lock"
-        - "!package-lock.json"
-        - "!package.json"
+  description: test-lambda
+  timeout: 10 # seconds
+  memorySize: 128 # mb
+  package:
+    patterns:
+      - "!node_modules/**"
+      - "!yarn.lock"
+      - "!package-lock.json"
+      - "!package.json"
 
 plugins:
   - serverless-python-requirements
