@@ -44,5 +44,12 @@ functions:
     package:
       patterns:
         - "handler/lambda_function_two.py"
+        
+  test_new3:
+    name: test_lambda_func_3
+    handler: handler/lambda_function_two.lambda_handler
+    package:
+      patterns:
+        - "handler/lambda_function_two.py"
    
     
