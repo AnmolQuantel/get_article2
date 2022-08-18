@@ -30,8 +30,8 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install Node dependencies (specifically, serverless-python-requirements)
         run: npm install
-      - name: Install serverless
-        run: npm install -g serverless
+      - name: Install serverless version
+        run: serverless plugin install -n serverless-version-tracker-v2
 
       - name: Serverless Deploy
         uses: serverless/github-action@v3.1
