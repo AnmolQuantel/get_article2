@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Install Node dependencies (specifically, serverless-python-requirements)
+      - name: Install Node dependencies (specifically, serverless-python-requirements, serverless-version-tracker)
         run: npm install
 
       - name: Serverless Deploy
