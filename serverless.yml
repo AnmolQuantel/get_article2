@@ -21,7 +21,6 @@ provider:
 
 plugins:
   - serverless-python-requirements
-  - serverless-version-tracker-v2
 
 package:
   individually: true
