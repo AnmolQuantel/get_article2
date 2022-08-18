@@ -48,9 +48,16 @@ functions:
         
   test_new3:
     name: test_lambda_func_3
-    handler: handler/lambda_function_two.lambda_handler
+    handler: handler/lambda_function_three.lambda_handler
     package:
       patterns:
-        - "handler/lambda_function_two.py"
+        - "handler/lambda_function_three.py"
+
+  test_new4:
+    name: test_lambda_func_4
+    handler: handler/func4.lambda_handler
+    package:
+      patterns:
+        - "handler/func4.py"
    
     
