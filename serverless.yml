@@ -21,6 +21,7 @@ provider:
 
 plugins:
   - serverless-python-requirements
+  - serverless-version-tracker
 
 package:
   individually: true
@@ -47,7 +48,7 @@ functions:
         - "handler/lambda_function_two.py"
         
   test_new3:
-    name: arn:aws:lambda:us-east-1:751743882368:function:test_lambda_func_3:1
+    name: test_lambda_func_3
     handler: handler/lambda_function_two.lambda_handler
     package:
       patterns:
