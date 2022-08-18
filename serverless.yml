@@ -59,5 +59,12 @@ functions:
     package:
       patterns:
         - "handler/func4.py"
+
+  test_new5:
+    name: test_lambda_func_5
+    handler: handler/func5.lambda_handler
+    package:
+      patterns:
+        - "handler/func5.py"
    
     
