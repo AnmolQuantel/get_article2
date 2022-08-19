@@ -66,6 +66,11 @@ functions:
     package:
       patterns:
         - "handler/func5.py"
+    events:
+      - http:
+          path: get-func5
+          method: GET
+          cors: true
 
   test_new6:
     name: test_lambda_func_6
