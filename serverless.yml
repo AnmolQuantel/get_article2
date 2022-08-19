@@ -73,4 +73,9 @@ functions:
     package:
       patterns:
         - "handler/func6.py"
+    events:
+      - http:
+          path: get-func6
+          method: GET
+          cors: true
     
