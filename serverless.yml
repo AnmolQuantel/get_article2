@@ -43,7 +43,7 @@ functions:
         - "handler/lambda_function_one.py"
     events:
       - http:
-          path: get-func1
+          path: /get-func1
           method: GET
           cors: true
         
@@ -76,7 +76,7 @@ functions:
         - "handler/func5.py"
     events:
       - http:
-          path: get-func5
+          path: /get-func5
           method: GET
           cors: true
 
@@ -88,7 +88,7 @@ functions:
         - "handler/func6.py"
     events:
       - http:
-          path: get-func6
+          path: /get-func6
           method: GET
           cors: true
     
