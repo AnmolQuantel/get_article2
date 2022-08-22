@@ -18,6 +18,9 @@ provider:
   timeout: 10 # seconds
   memorySize: 128 # mb
   versionFunctions: false
+  apiGateway:
+      - restApiId: hsryeprwi8
+      - restApiRootResourceId: ucskvj38fl
 
 plugins:
   - serverless-python-requirements
@@ -38,9 +41,6 @@ functions:
     package:
       patterns:
         - "handler/lambda_function_one.py"
-    apiGateway:
-      - restApiId: hsryeprwi8
-      - restApiRootResourceId: ucskvj38fl
     events:
       - http:
           path: get-func1
