@@ -19,8 +19,8 @@ provider:
   memorySize: 128 # mb
   versionFunctions: false
   apiGateway:
-      - restApiId: hsryeprwi8
-      - restApiRootResourceId: ucskvj38fl
+      restApiId: hsryeprwi8
+      restApiRootResourceId: ucskvj38fl
 
 plugins:
   - serverless-python-requirements
